@@ -1,0 +1,197 @@
+/*
+Theme: MLML Childe
+Description: Child theme for thematic for mlml
+Author: Matt Katz
+Template: thematic
+*/
+
+
+
+@import url("../thematic/style.css");
+
+blockquote {
+	position:relative; 
+	padding:50px 15px; 
+	margin:1em 0 3em;
+	border:10px solid #ccc; 
+	text-align:center; 
+	color:#333;
+	background:#fff; 
+
+	/* css3 */
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+}
+
+/* creates larger curve */
+blockquote:before {
+	content:""; 
+	position:absolute; 
+	z-index:10; 
+	bottom:-40px; 
+	left:250px; 
+	width:50px; 
+	height:30px;
+	border-style:solid; 
+	border-width:0 10px 10px 0; 
+	border-color:#ccc; 
+	background:transparent;
+
+	/* css3 */
+	-moz-border-radius-bottomright:80px 50px;
+	-webkit-border-bottom-right-radius:80px 50px;
+	border-bottom-right-radius:80px 50px;
+}
+
+/* creates smaller curve */
+blockquote:after {
+	content:""; 
+	position:absolute; 
+	z-index:10; 
+	bottom:-40px; 
+	left:250px; 
+	width:20px; 
+	height:30px; 
+	border-style:solid; 
+	border-width:0 10px 10px 0; 
+	border-color:#ccc; 
+	background:transparent;
+
+	/* css3 */
+	-moz-border-radius-bottomright:40px 50px; 
+	-webkit-border-bottom-right-radius:40px 50px; 
+	border-bottom-right-radius:40px 50px; 
+}
+
+/* creates a small circle to produce a rounded point where the two curves meet */
+blockquote>:first-child:before {
+	content:""; 
+	position:absolute; 
+	bottom:-40px; 
+	left:245px; 
+	width:10px; 
+	height:10px;
+	background:#ccc;
+
+	/* css3 */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+/* creates a white rectangle to cover part of the oval border*/
+blockquote>:first-child:after {
+	content:""; 
+	position:absolute; 
+	bottom:-10px; 
+	left:276px; 
+	width:24px; 
+	height:15px; 
+	background:#fff;
+}
+
+/*Cloud Style */
+
+      body{
+        background: skyBlue;
+        background-image: -moz-radial-gradient(30% 0 0deg, ellipse farthest-corner, white, skyBlue);
+      }
+    img {  
+      max-width: 340px;  
+      height : auto;  
+    }  
+      #blog-title a { 
+        color:white;
+        text-shadow: -1px 0 1px #ddd, 1px 0 2px #333;
+      }
+      .entry-title a { 
+        color:white;
+        text-shadow: -1px 0 1px #ddd, 1px 0 2px #333;
+      }
+      h1{ 
+        color:white;
+        text-shadow: -1px 0 1px #ddd, 1px 0 2px #333;
+      }
+      
+      h2{
+        width:100%;
+        color:white;
+        text-shadow: -1px 0 1px #ddd, 1px 0 2px #333;
+      }
+      .entry-content {
+        -moz-column-width:340px;
+        border-bottom-color: #EEEEEE;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        padding-bottom:50px;
+
+      }
+      #main {
+        width:100%;
+      }
+      #content {
+        width:100%;
+      }
+      #container{
+        width:75%;
+      }
+
+      .archives {
+        -moz-column-width:340px;
+      }
+      .archives ul{ margin-left:0px;}
+      .archives li span { float: right;}
+      .archives li {
+        border-bottom-color: #EEEEEE;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        color: #777777;
+        font-size: 13px;
+        list-style-image: none;
+        list-style-position: outside;
+        list-style-type: none;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        padding-bottom: 5px;
+        padding-left: 3px;
+        padding-right: 3px;
+        padding-top: 5px;
+      }
+      .post-title {
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        overflow-x:hidden;
+        overflow-y:hidden;
+      }
+      .mainpost {
+       /* box-shadow: 0px 0px 4px #555, inset 0px 0px 4px #555;
+        -moz-box-shadow: 0px 0px 4px #555, inset 0px 0px 4px #555;
+        */
+      }
+      .cloud {
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-color: rgba(250,250,250,1);
+        background-image: -moz-radial-gradient(30% 0 0deg, ellipse farthest-corner, rgba(255,255,255,.7), rgba(255,255,255,1));
+        background-origin: padding-box;
+        background-position: 0 0;
+        background-repeat: repeat;
+        background-size: auto auto;
+        -moz-border-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        box-shadow: 0 0 15px 5px rgba(250,250,250,0.7), 0 0 15px 5px #CCCCCC inset;
+        -moz-box-shadow: 0 0 15px 5px rgba(250,250,250,0.7), 0 0 15px 5px #CCCCCC inset;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+                
+
+      }
