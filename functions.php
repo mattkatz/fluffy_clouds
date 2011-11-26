@@ -76,29 +76,30 @@ function childtheme_create_stylesheet($content) {
 }
 //add_filter('thematic_create_stylesheet', 'childtheme_create_stylesheet');
 
-//auto resize embeds to have a width of 340px
-function resize_objects_and_embeds(){
-  //$script = <<< SCRPT
+//auto resize embeds to have a width of 360px
+//doing this because I want youtubes and such to be more uniform
+function resize_objects_and_embeds(){ ?>
 
-    //<script type='text/javascript'>
+    <script type='text/javascript'>
+    function setWidth(w,tagname){
 
-    //setWidth('340px','embed');
-    //setWidth('340px','object');
-    //function setWidth(w,tagname){
-      //var items =getElementsByTagName(tagname); 
-      //for item in items{
-        //item.setAttribute('width',w);
-      //}
-    //}
+      var items = document.getElementsByTagName(tagname); 
+      for(var i = 0; i < items.length; ++i){
+        var item = items[i];
+        item.setAttribute('width',w);
+      }
+    }
+    
 
-    //</script>
-    //SCRPT;
-    //return $script;
-  return '<script type="text/javascript">alert("hello!");</script>';
+    jQuery.noConflict();
+    jQuery(document).ready(function(){
+      setWidth('360px','object');
+      setWidth('360px','embed');
+    });
 
+    </script>
+    <?php
 }
 
-add_action('thematic_before', 'resize_objects_and_embeds');
-
-
+add_action('wp_footer', 'resize_objects_and_embeds');
 ?>
