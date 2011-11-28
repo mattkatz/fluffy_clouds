@@ -127,7 +127,7 @@ blockquote {
       .entry-content {
         -moz-column-width:340px;
         column-width:340px;
-        webkit-column-width:340px;
+        -webkit-column-width:340px;
         padding-bottom:50px;
 
       }
@@ -183,7 +183,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
       .archives {
         -moz-column-width:340px;
         column-width:340px;
-        webkit-column-width:340px;
+        -webkit-column-width:340px;
       }
       .archives ul{ margin-left:0px;}
       .archives li span { float: right;}
