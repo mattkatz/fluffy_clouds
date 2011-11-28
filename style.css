@@ -8,6 +8,7 @@ Template: thematic
 
 
 @import url("../thematic/style.css");
+/*
 
 blockquote {
 	position:relative; 
@@ -18,14 +19,14 @@ blockquote {
 	color:#333;
 	background:#fff; 
 
-	/* css3 */
 	-moz-border-radius:20px;
 	-webkit-border-radius:20px;
 	border-radius:20px;
 }
+*/
 
 /* creates larger curve */
-blockquote:before {
+/*blockquote:before {
 	content:""; 
 	position:absolute; 
 	z-index:10; 
@@ -38,14 +39,14 @@ blockquote:before {
 	border-color:#ccc; 
 	background:transparent;
 
-	/* css3 */
 	-moz-border-radius-bottomright:80px 50px;
 	-webkit-border-bottom-right-radius:80px 50px;
 	border-bottom-right-radius:80px 50px;
 }
+*/
 
 /* creates smaller curve */
-blockquote:after {
+/*blockquote:after {
 	content:""; 
 	position:absolute; 
 	z-index:10; 
@@ -58,14 +59,14 @@ blockquote:after {
 	border-color:#ccc; 
 	background:transparent;
 
-	/* css3 */
 	-moz-border-radius-bottomright:40px 50px; 
 	-webkit-border-bottom-right-radius:40px 50px; 
 	border-bottom-right-radius:40px 50px; 
 }
+*/
 
 /* creates a small circle to produce a rounded point where the two curves meet */
-blockquote>:first-child:before {
+/*blockquote>:first-child:before {
 	content:""; 
 	position:absolute; 
 	bottom:-40px; 
@@ -74,14 +75,13 @@ blockquote>:first-child:before {
 	height:10px;
 	background:#ccc;
 
-	/* css3 */
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
-}
+}*/
 
 /* creates a white rectangle to cover part of the oval border*/
-blockquote>:first-child:after {
+/*blockquote>:first-child:after {
 	content:""; 
 	position:absolute; 
 	bottom:-10px; 
@@ -89,7 +89,7 @@ blockquote>:first-child:after {
 	width:24px; 
 	height:15px; 
 	background:#fff;
-}
+}*/
 
 /*Cloud Style */
 
@@ -103,11 +103,16 @@ blockquote>:first-child:after {
     }  
       #blog-title a { 
         color:white;
-        text-shadow: -1px 0 1px #ddd, 1px 0 2px #333;
+        text-shadow: 2px 2px 2px #333333;
       }
       .entry-title a { 
         color:white;
-        text-shadow: -1px 0 1px #ddd, 1px 0 2px #333;
+        background: none repeat scroll 0 0 white;
+        box-shadow: 0 0 4px 4px white;
+        text-shadow: 2px 2px 2px #333333;
+      }
+      .entry-title {
+        padding: 7px;
       }
       h1{ 
         color:white;
@@ -121,9 +126,6 @@ blockquote>:first-child:after {
       }
       .entry-content {
         -moz-column-width:340px;
-        border-bottom-color: #EEEEEE;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
         padding-bottom:50px;
 
       }
@@ -141,13 +143,13 @@ blockquote>:first-child:after {
         border-bottom: none;
       }
       #wrapper{
-        background: -moz-linear-gradient(top, rgba(214,249,255,0) 0%, rgba(44,59,169,0) 80%, rgba(12,23,152,0.75) 95%, rgba(4,14,148,0.95) 99%, rgba(4,14,148,1) 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(214,249,255,0)), color-stop(80%,rgba(44,59,169,0)), color-stop(95%,rgba(12,23,152,0.75)), color-stop(99%,rgba(4,14,148,0.95)), color-stop(100%,rgba(4,14,148,1))); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top, rgba(214,249,255,0) 0%,rgba(44,59,169,0) 80%,rgba(12,23,152,0.75) 95%,rgba(4,14,148,0.95) 99%,rgba(4,14,148,1) 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top, rgba(214,249,255,0) 0%,rgba(44,59,169,0) 80%,rgba(12,23,152,0.75) 95%,rgba(4,14,148,0.95) 99%,rgba(4,14,148,1) 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top, rgba(214,249,255,0) 0%,rgba(44,59,169,0) 80%,rgba(12,23,152,0.75) 95%,rgba(4,14,148,0.95) 99%,rgba(4,14,148,1) 100%); /* IE10+ */
-        background: linear-gradient(top, rgba(214,249,255,0) 0%,rgba(44,59,169,0) 80%,rgba(12,23,152,0.75) 95%,rgba(4,14,148,0.95) 99%,rgba(4,14,148,1) 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d6f9ff', endColorstr='#040e94',GradientType=0 ); /* IE6-9 */
+        background: -moz-linear-gradient(top, rgba(214,249,255,0) 0%, rgba(46,48,131,0) 90%, rgba(14,10,108,0.75) 96%, rgba(6,0,102,0.95) 99%, rgba(6,0,102,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(214,249,255,0)), color-stop(90%,rgba(46,48,131,0)), color-stop(96%,rgba(14,10,108,0.75)), color-stop(99%,rgba(6,0,102,0.95)), color-stop(100%,rgba(6,0,102,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(214,249,255,0) 0%,rgba(46,48,131,0) 90%,rgba(14,10,108,0.75) 96%,rgba(6,0,102,0.95) 99%,rgba(6,0,102,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(214,249,255,0) 0%,rgba(46,48,131,0) 90%,rgba(14,10,108,0.75) 96%,rgba(6,0,102,0.95) 99%,rgba(6,0,102,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(214,249,255,0) 0%,rgba(46,48,131,0) 90%,rgba(14,10,108,0.75) 96%,rgba(6,0,102,0.95) 99%,rgba(6,0,102,1) 100%); /* IE10+ */
+        background: linear-gradient(top, rgba(214,249,255,0) 0%,rgba(46,48,131,0) 90%,rgba(14,10,108,0.75) 96%,rgba(6,0,102,0.95) 99%,rgba(6,0,102,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d6f9ff', endColorstr='#060066',GradientType=0 ); /* IE6-9 */
       }
       #primary{
         border:none;
@@ -171,6 +173,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
       }
       #container{
         width:75%;
+      }
+      #subsidiary .sub-aside, #subsidiary a {
+        color:white;
       }
 
       .archives {
