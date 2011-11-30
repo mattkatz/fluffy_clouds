@@ -96,6 +96,7 @@ blockquote {
       body{
         background: skyBlue;
         background-image: -moz-radial-gradient(30% 0 0deg, ellipse farthest-corner, white, skyBlue),-moz-linear-gradient(center top , rgba(214, 249, 255, 0) 0%, #3545AD 76%, #040E94 80%, #040E94 100%) ;
+        background-image: -webkit-gradient-radial-gradient(30% 0, ellipsefarthest-corner, white, skyBlue),-webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%,rgba(125,185,232,0.85) 15%,rgba(30,87,153,0.4) 60%,rgba(30,87,153,0) 100%); /* Chrome10+,Safari5.1+ */;
       }
     img {  
       max-width: 340px;  
